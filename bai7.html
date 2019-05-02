@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write(" phương trình dạng : Ax^2+ Bx +C =0");
+    a= parseInt(prompt(" nhập A"));
+    b= parseInt(prompt(" nhập B"));
+    c = parseInt(prompt(" nhập C"));
+    denta = b*b - 4*a*c;
+
+
+
+    if(denta === 0){
+        document.write("<br>phương trình có nghiệm kép :" + -b/(2*a));
+    }
+    if(denta > 0){
+        document.write("<br>x1 =" + -(Math.sqrt(b*b+denta))/(2*a));
+        document.write("<br>x2 =" + Math.sqrt(b*b - denta)/(2*a));
+    }
+    if(denta < 0){
+        document.write("<br> phương trình vô nghiệm ");
+    }
+
+</script>
+</body>
+</html>
